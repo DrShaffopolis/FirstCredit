@@ -1,0 +1,14 @@
+{
+  "name": "FirstCredit",
+  "version": "0.0.1",
+  "description": "Proof-of-concept for a credit teaching tool; but mostly just teaching myself Angular 2 and TypeScript",
+  "author": "Chris Shaffer <chris@scoutcorpsllc.com>",
+  "scripts": {
+    "install": "cd client & npm install & cd ../server & npm install",
+    "start-client": "cd client & npm start",
+    "start-server": "cd server & npm start"
+  },
+  "dependencies": {
+
+  }
+}
