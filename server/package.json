@@ -1,0 +1,12 @@
+{
+  "name": "FirstCredit-Server",
+  "version": "0.0.1",
+  "description": "Node.js Server for FirstCredit (also learning TypeScript)",
+  "author": "Chris Shaffer <chris@scoutcorpsllc.com>",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+
+  }
+}
