@@ -3,11 +3,19 @@
   "version": "0.0.1",
   "description": "Node.js Server for FirstCredit (also learning TypeScript)",
   "author": "Chris Shaffer <chris@scoutcorpsllc.com>",
-  "scripts": {
-    "start": "node index.js"
-  },
+  "main": "dist/index.ts",
   "dependencies": {
-    "express": "4.15.3",
+    "typescript": "2.4.2",
+    "@types/express": "4.0.36",
     "express-session": "1.15.4"
+  },
+  "devDependencies": {
+    "@types/node": "8.0.17",
+    "typescript": "2.4.2"
+  },
+  "scripts": {
+    "build": "npm install && npm run compile",
+    "compile": "tsc",
+    "start": "node dist/index.js"
   }
 }
