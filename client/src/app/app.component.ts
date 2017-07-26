@@ -10,7 +10,11 @@ import { ApiService } from './api/api.service';
 export class AppComponent {
   constructor(private apiService: ApiService) { };
   title = 'app';
-  testApiCall(): string {
-    return this.apiService.testApiCall();
+  testApiCallResult: string = "testing promise not done";
+  testApiCall(): void {
+    this.apiService.testApiCall().then(x => this.testApiCallResult = x);
+  }
+  ngOnInit(): void {
+    this.testApiCall();
   }
 }
