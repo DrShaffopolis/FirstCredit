@@ -5,8 +5,12 @@
   "author": "Chris Shaffer <chris@scoutcorpsllc.com>",
   "scripts": {
     "install": "cd client & npm install & cd ../server & npm install",
-    "run-client": "cd client & npm run build-watch",
-    "run-server": "cd server & npm start"
+    "build": "cd client & npm run build & cd ../server & npm run build",
+    "run-client-debug": "cd client & npm run build-watch",
+    "build-server-debug": "cd server & npm run build-watch",
+    "run-server-debug": "cd server & npm run start",
+    "start": "cd client & npm run build & cd ../server & npm run start",
+    "install-build-start": "npm install & npm run build & npm run start"
   },
   "dependencies": {
 

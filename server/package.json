@@ -11,11 +11,13 @@
   },
   "devDependencies": {
     "@types/node": "8.0.17",
+    "nodemon": "1.11.0",
+    "ts-node": "3.3.0",
     "typescript": "2.4.2"
   },
   "scripts": {
-    "build": "npm install && npm run compile",
-    "compile": "tsc",
+    "build": "tsc",
+    "build-watch": "tsc -w",
     "start": "node dist/index.js"
   }
 }
