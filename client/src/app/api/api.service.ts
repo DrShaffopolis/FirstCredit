@@ -11,9 +11,9 @@ export class ApiService {
     return this.http
       .get('/api')
       .map((res:Response) => {
-        console.log(res);
-        return "observable test";
+        return res.json().text;
       });
+    
     /*
     return new Promise((resolve) => {
       setTimeout(() => resolve("promise delayed"), 2000);
