@@ -13,8 +13,8 @@ export class AppComponent {
   testApiCallResult: string = "testing promise not done";
   testApiCall(): void {
     this.apiService.testApiCall().then(x => this.testApiCallResult = x);
-  }
+  };
   ngOnInit(): void {
     this.testApiCall();
-  }
+  };
 }
